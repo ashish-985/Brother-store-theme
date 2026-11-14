@@ -84,3 +84,70 @@ button,select,input{font:inherit}a:focus-visible,button:focus-visible,input:focu
  .category-section--luxury .category-art img{aspect-ratio:4/3}
  .category-section--luxury .category-art .btn{right:12px;bottom:12px}
 }
+
+
+/* BROTHER'S STORE — warm dark / antique gold visual system */
+:root{--brown:#17100c;--cream:#f4eadb;--blue:#d6a34f;--ink:#f5eee4;--muted:#b8a997;--line:#49372a}
+body{background:#100c09;color:#f5eee4;font-family:'DM Sans',Arial,sans-serif}
+.wrap{width:min(1320px,calc(100% - 64px))}
+.announcement{background:#d5a04b;color:#17100c;letter-spacing:.16em;font-size:10px}
+.header--dark{background:#120d09;color:#f7eddf;border-bottom:1px solid #3b2b20}
+.header--dark .brand{font:700 28px 'Playfair Display',Georgia,serif;color:#e6b45f;letter-spacing:.01em}
+.header--dark .nav,.header--dark .header-tools{color:#f4eadb;font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+.header--dark .nav a:hover,.header--dark .header-tools a:hover{color:#e6b45f}
+.home-hero--cover{padding:0;background:#100c09}
+.cover-image{position:relative;width:100%;overflow:hidden;background:#100c09}
+.cover-image>img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center}
+.cover-cta{position:absolute;right:5.2%;bottom:9%;display:inline-flex;gap:20px;align-items:center;background:#d7a34e;color:#160f0a;padding:15px 24px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;border:1px solid #f0c878;transition:.2s}
+.cover-cta:hover{background:#f1c777;transform:translateY(-2px)}
+.value-strip--luxury{background:#18110c;border-top:1px solid #483525;border-bottom:1px solid #483525;color:#f3e8d7}
+.value-strip--luxury .value-grid{padding:24px 0}
+.value-strip--luxury .value-grid span{color:#d6a34f}
+.value-strip--luxury .value-grid strong{color:#f6ead8;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.value-strip--luxury .value-grid small{color:#b8a997}
+.section{padding-top:76px;padding-bottom:76px}
+.section-head h2,.story h2,.category-section--luxury h2{color:#f5ead9;font:600 clamp(32px,4vw,48px)/1.1 'Playfair Display',Georgia,serif;letter-spacing:-.02em}
+.eyebrow{color:#d5a04b;letter-spacing:.22em;font-size:9px}
+.section-head p,.story-copy p{color:#b8a997;line-height:1.9}
+.underlink{color:#e3b45f;text-decoration:none;border-bottom:1px solid #98703c;padding-bottom:5px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.products{gap:22px}
+.product-card{background:#1b130e;border:1px solid #49372a;border-radius:2px;overflow:hidden}
+.product-card:hover{border-color:#c29148;box-shadow:0 15px 35px #0008}
+.product-photo{background:#21170f;aspect-ratio:1/1.1}
+.product-copy{padding:16px}
+.product-copy h3{color:#f4eadb;font-size:12px;letter-spacing:.02em;font-weight:500}
+.product-price{color:#e6b45f;font-size:13px}
+.story--luxury{gap:clamp(36px,7vw,110px)}
+.story--luxury .story-image{border:1px solid #513d2a;border-radius:2px;background:#1a120d}
+.story--luxury .story-image img{aspect-ratio:4/3;object-fit:cover}
+.story--luxury .story-copy{max-width:480px}
+.story--luxury .btn{border-radius:0;border-color:#9e743e;color:#e9c17b;background:transparent;text-transform:uppercase;letter-spacing:.13em;font-size:10px;padding:15px 22px}
+.story--luxury .btn:hover{background:#d6a34f;color:#160f0a}
+.category-section--luxury{background:#18110c;border-top:1px solid #3d2b1e;border-bottom:1px solid #3d2b1e}
+.category-section--luxury .section{padding-top:72px;padding-bottom:78px}
+.category-section--luxury .category-art{border:1px solid #493525;border-radius:2px}
+.category-section--luxury .category-art img{display:block;width:100%;aspect-ratio:16/7;object-fit:cover}
+.btn-gold{background:#d6a34f;color:#170f09;border:1px solid #e7bd70}
+.category-section--luxury .category-art .btn{right:24px;left:auto;bottom:24px;border-radius:0;padding:15px 22px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.footer--dark{background:#0b0806;border-top:1px solid #493525;color:#f3e8d7}
+.footer--dark .footer-brand{color:#e3b45f;font-size:28px}
+.footer--dark p,.footer--dark a{color:#b9a895}
+.footer--dark h3{color:#e3b45f;letter-spacing:.18em}
+.footer--dark .footer-bottom{border-color:#3d2b1e;color:#8e7b69}
+@media(max-width:800px){
+ .wrap{width:calc(100% - 32px)}
+ .header--dark .header-inner{min-height:70px}
+ .header--dark .brand{font-size:22px}
+ .cover-image>img{width:100%;height:360px;object-fit:cover;object-position:53% center}
+ .cover-cta{right:16px;bottom:15px;padding:12px 16px;font-size:9px}
+ .value-strip--luxury .value-grid{grid-template-columns:1fr;gap:14px;padding:22px 0}
+ .section{padding:48px 0}
+ .section-head{align-items:flex-start;flex-direction:column}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .product-copy{padding:11px}
+ .story--luxury{grid-template-columns:1fr;gap:24px;padding-top:50px;padding-bottom:55px}
+ .story--luxury .story-image img{aspect-ratio:4/3}
+ .category-section--luxury .section{padding:50px 0}
+ .category-section--luxury .category-art img{aspect-ratio:4/3}
+ .category-section--luxury .category-art .btn{right:12px;bottom:12px}
+}
