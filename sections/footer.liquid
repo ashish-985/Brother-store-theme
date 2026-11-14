@@ -1,6 +1,6 @@
-<footer class="footer"><div class="wrap footer-grid">
-  <div><div class="footer-brand">{{ shop.name | escape }}</div><p>Useful finds, thoughtful details and everyday discoveries.</p></div>
+<footer class="footer footer--dark"><div class="wrap footer-grid">
+  <div><div class="footer-brand">{{ shop.name | escape }}</div><p>A considered edit of lifestyle, spiritual, tech and home décor finds.</p></div>
   <div><h3>Explore</h3><a href="{{ routes.all_products_collection_url }}">Shop all products</a><a href="/pages/about-us">About us</a><a href="/pages/contact">Contact</a></div>
-  <div><h3>Customer care</h3><a href="/policies/shipping-policy">Shipping policy</a><a href="/policies/refund-policy">Returns & refunds</a><a href="/policies/privacy-policy">Privacy policy</a><p>{{ settings.support_email | escape }}</p></div>
+  <div><h3>Customer care</h3><a href="/policies/shipping-policy">Shipping policy</a><a href="/policies/refund-policy">Returns & refunds</a><a href="/policies/privacy-policy">Privacy policy</a>{% if settings.support_email != blank %}<p>{{ settings.support_email | escape }}</p>{% endif %}</div>
 </div><div class="wrap footer-bottom">© {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. All rights reserved.</div></footer>
 {% schema %}{"name":"Footer","settings":[]} {% endschema %}
