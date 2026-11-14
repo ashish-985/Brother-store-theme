@@ -3,6 +3,7 @@
     "hero": {
       "type": "home-hero",
       "settings": {
+        "button_label": "Shop the collection",
         "button_link": "/products/jap-counter-jaap-mala-counter-mala-jaap-counter-tasbeeh-misbaha-counter-different-use-for-naam-jaap-mantra-jap"
       }
     },
@@ -21,17 +22,17 @@
     "story": {
       "type": "image-story",
       "settings": {
-        "eyebrow": "A MOMENT FOR YOURSELF",
-        "heading": "Make room for the moments that matter.",
-        "text": "A small ritual can bring a little calm to a busy day. Explore simple essentials made to accompany your everyday moments of focus and reflection.",
-        "button_label": "Explore the collection"
+        "eyebrow": "A THOUGHTFUL WAY TO LIVE",
+        "heading": "Small details. Better everyday moments.",
+        "text": "Explore a considered mix of spiritual essentials, useful tech and distinctive home accents.",
+        "button_label": "Explore all finds"
       }
     },
     "categories": {
       "type": "category-showcase",
       "settings": {
-        "heading": "Good things, simply found.",
-        "text": "Explore the collection and find something that fits your everyday.",
+        "heading": "Discover your next favourite.",
+        "text": "Spiritual, lifestyle, tech and home décor — selected to bring a little character to your space.",
         "button_label": "Shop all products"
       }
     }
