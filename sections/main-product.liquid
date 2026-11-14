@@ -1,0 +1,13 @@
+<section class="wrap product-layout"><div class="gallery">
+{% for media in product.media %}{% if media.media_type == 'image' %}<div class="gallery-item">{{ media | image_url: width: 1200 | image_tag: loading: 'lazy', alt: media.alt | default: product.title }}{% else %}{{ media | media_tag }}{% endif %}</div>{% endfor %}
+</div><div class="product-details"><span class="eyebrow">{{ shop.name | escape }}</span><h1>{{ product.title | escape }}</h1>
+<div class="price-row"><strong>{{ product.selected_or_first_available_variant.price | money }}</strong>{% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}<s>{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>{% endif %}</div>
+{% if product.available %}<p class="stock good">Available to order</p>{% else %}<p class="stock bad">Currently unavailable. Please check back later.</p>{% endif %}
+{% form 'product', product, id: 'ProductForm' %}
+{% unless product.has_only_default_variant %}<label for="VariantSelect">Choose an option</label><select id="VariantSelect" name="id" data-variant-select>{% for variant in product.variants %}<option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected{% endif %} {% unless variant.available %}disabled{% endunless %}>{{ variant.title }} — {{ variant.price | money }}</option>{% endfor %}</select>{% else %}<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">{% endunless %}
+<label for="Quantity">Quantity</label><input id="Quantity" name="quantity" type="number" min="1" value="1">
+<button class="btn btn-blue buy-button" type="submit" name="add" {% unless product.available %}disabled{% endunless %}>{% if product.available %}Add to cart{% else %}Sold out{% endif %}</button>
+{% if product.available %}{{ form | payment_button }}{% endif %}{% endform %}
+<div class="product-assurance"><p>• Review product photos and description before ordering</p><p>• Shipping options and charges are shown at checkout</p><p>• <a href="/pages/contact">Contact us</a> if you need help</p></div>
+<div class="description">{{ product.description }}</div><div class="policy-row"><a href="/policies/shipping-policy">Shipping</a><a href="/policies/refund-policy">Returns</a><a href="/policies/privacy-policy">Privacy</a></div></div></section>
+{% schema %}{"name":"Main product","settings":[]} {% endschema %}
