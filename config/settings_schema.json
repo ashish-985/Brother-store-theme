@@ -1,0 +1,54 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Brother's Store – Brown Cream Blue",
+    "theme_author": "Brother's Store",
+    "theme_version": "5.1.0"
+  },
+  {
+    "name": "Brand colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "brown",
+        "label": "Deep brown",
+        "default": "#4B3027"
+      },
+      {
+        "type": "color",
+        "id": "cream",
+        "label": "Warm cream",
+        "default": "#F4EBDD"
+      },
+      {
+        "type": "color",
+        "id": "blue",
+        "label": "Baby blue",
+        "default": "#A9D6F2"
+      },
+      {
+        "type": "color",
+        "id": "text",
+        "label": "Dark text",
+        "default": "#30231D"
+      }
+    ]
+  },
+  {
+    "name": "Store information",
+    "settings": [
+      {
+        "type": "text",
+        "id": "announcement",
+        "label": "Announcement text",
+        "default": "Thoughtful finds for everyday living"
+      },
+      {
+        "type": "text",
+        "id": "support_email",
+        "label": "Customer support email",
+        "default": "Add your support email"
+      }
+    ]
+  }
+]
