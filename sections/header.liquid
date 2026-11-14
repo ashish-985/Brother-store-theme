@@ -1,0 +1,9 @@
+<header class="header"><div class="wrap header-inner">
+  <a href="{{ routes.root_url }}" class="brand">{{ shop.name | escape }}</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="{{ routes.root_url }}">Home</a><a href="{{ routes.all_products_collection_url }}">Shop all</a>
+    {% if section.settings.menu != blank %}{% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}{% endif %}
+  </nav>
+  <div class="header-tools"><a href="{{ routes.search_url }}">Search</a><a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a></div>
+</div></header>
+{% schema %}{"name":"Header","settings":[{"type":"link_list","id":"menu","label":"Additional menu"}]}{% endschema %}
