@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "hero": {
+      "type": "home-hero",
+      "settings": {}
+    },
+    "values": {
+      "type": "value-strip",
+      "settings": {}
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "A few favourites",
+        "subheading": "Browse useful, interesting and thoughtful finds.",
+        "limit": 4
+      }
+    },
+    "story": {
+      "type": "image-story",
+      "settings": {
+        "eyebrow": "A LITTLE INSPIRATION",
+        "heading": "Make everyday feel a little more special.",
+        "text": "Discover pieces that bring character and convenience to your everyday routine.",
+        "button_label": "Find your next favourite"
+      }
+    },
+    "categories": {
+      "type": "category-showcase",
+      "settings": {
+        "heading": "Find your kind of useful.",
+        "text": "Different discoveries for different corners of your day.",
+        "button_label": "Shop all products"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "values",
+    "featured",
+    "story",
+    "categories"
+  ]
+}
